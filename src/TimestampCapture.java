@@ -6,9 +6,10 @@ import java.io.InputStreamReader;
  * Created by ncollins on 5/19/2015.
  */
 public class TimestampCapture {
-    public String getTimestamps(){
+    public void getTimestamps(){
         String s = null;
-        String command;
+        //ffprobe -show_frames -of compact=p=0 -f lavfi "movie=Captain.America.2011.720p.BrRip.x264.YIFY.mp4,select=gt(scene\,0.3)"
+        String command = "";
 
         try {
             // using the Runtime exec method:
